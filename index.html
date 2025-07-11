@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Generator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Responsive Portfolio Generator</h1>
+    <p>Enter your details and generate your portfolio preview instantly.</p>
+  </header>
+
+  <form id="portfolioForm">
+    <label for="fullName">Full Name *</label>
+    <input type="text" id="fullName" placeholder="John Doe" required />
+
+    <label for="title">Professional Title *</label>
+    <input type="text" id="title" placeholder="Web Developer, Designer..." required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" placeholder="john@example.com" required />
+
+    <label for="website">Website URL</label>
+    <input type="url" id="website" placeholder="https://yourwebsite.com" />
+
+    <label for="about">About You *</label>
+    <textarea id="about" placeholder="Write a short introduction about yourself" required></textarea>
+
+    <label for="skills">Skills (comma separated) *</label>
+    <input type="text" id="skills" placeholder="JavaScript, React, CSS..." required />
+
+    <label for="projects">Projects (comma separated) *</label>
+    <input type="text" id="projects" placeholder="Portfolio Website, Blog, Game..." required />
+
+    <button type="submit">Generate Portfolio</button>
+  </form>
+
+  <section id="portfolioPreview" aria-live="polite">
+    <header>
+      <h1>Your Portfolio Preview</h1>
+      <p>Fill out the form and see your portfolio here!</p>
+    </header>
+  </section>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
